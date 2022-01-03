@@ -1,0 +1,345 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Beach Cleanup",
+      "date": "Tues Aug 19, 2018",
+      "time": "6:00",
+      "location": "Addis Ababa",
+      "description": "Some description goes here",
+      "organizer": "Paul Tadesse",
+      "caregory": "Enlightment",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Paul Tadesse"
+        },
+        {
+          "id": "dfd543",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "kml765",
+          "name": "Abebe Beso"
+        },
+        {
+          "id": "ter132",
+          "name": "Chala Chube"
+        },
+        {
+          "id": "bgt645",
+          "name": "Hugo kebede"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aunty Party",
+      "date": "Wed May 19, 2021",
+      "time": "6:00",
+      "location": "Addis Ababa",
+      "description": "Some description goes here",
+      "organizer": "Paul Tadesse",
+      "caregory": "Enlightment",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Paul Tadesse"
+        },
+        {
+          "id": "dfd543",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "kml765",
+          "name": "Abebe Beso"
+        },
+        {
+          "id": "ter132",
+          "name": "Chala Chube"
+        },
+        {
+          "id": "bgt645",
+          "name": "Hugo kebede"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Music Fest",
+      "date": "Mon Jan 7, 2019",
+      "time": "6:00",
+      "location": "Addis Ababa",
+      "description": "Some description goes here",
+      "organizer": "Paul Tadesse",
+      "caregory": "Enlightment",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Paul Tadesse"
+        },
+        {
+          "id": "dfd543",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "kml765",
+          "name": "Abebe Beso"
+        },
+        {
+          "id": "ter132",
+          "name": "Chala Chube"
+        },
+        {
+          "id": "bgt645",
+          "name": "Hugo kebede"
+        }
+      ]
+    },
+    {
+      "id": 2444506,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Working ?",
+      "date": "",
+      "time": "",
+      "location": "",
+      "description": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 9084554,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 3428754,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 6534287,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 7978234,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 2978654,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 2345987,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 5465987,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 356987,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 8464024,
+      "user": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "title": "Advanced Vue",
+      "date": "2022-01-01T15:55:00.000Z",
+      "time": "",
+      "location": "addis ababa",
+      "description": "advanced vue course by Vue Mastery",
+      "organizer": {
+        "id": "abc123",
+        "name": "paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 1843217,
+      "user": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "title": "test...",
+      "date": "",
+      "time": "",
+      "location": "",
+      "description": "HAHAHA",
+      "organizer": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "caregory": "",
+      "attendees": [],
+      "category": ""
+    },
+    {
+      "id": 7777066,
+      "user": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "title": "Notification Works !",
+      "date": "",
+      "time": "",
+      "location": "",
+      "description": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "caregory": "",
+      "attendees": []
+    },
+    {
+      "id": 4718651,
+      "user": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "title": "",
+      "date": "2022-01-05T19:31:00.000Z",
+      "time": "",
+      "location": "",
+      "description": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "caregory": "",
+      "attendees": []
+    }
+  ]
+}
