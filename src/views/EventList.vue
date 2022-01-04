@@ -32,15 +32,6 @@ import EventCard from "../components/EventCard.vue";
 import { mapState } from "vuex";
 import store from "../store";
 
-function getPageEvents(routeTo, next) {
-  const currentPage = parseInt(routeTo.query.page) || 1;
-
-  store.dispatch("event/fetchEvents", { page: currentPage }).then(() => {
-    routeTo.params.page = currentPage;
-    next();
-  });
-}
-
 export default {
   props: {
     page: {
@@ -52,12 +43,20 @@ export default {
     EventCard,
   },
 
-  beforeRouteEnter(routeTo, routeFrom, next) {
-    getPageEvents(routeTo, next);
-  },
-
   beforeRouteUpdate(routeTo, routeFrom, next) {
-    getPageEvents(routeTo, next);
+    const currentPage = parseInt(routeTo.query.page) || 1;
+
+    store
+      .dispatch("event/fetchEvents", { page: currentPage })
+      .then(() => {
+        routeTo.params.page = currentPage;
+        next();
+      })
+      .catch((error) => {
+        if (error && error.code == "ECONNABORTED") {
+          next({ name: "network-issue" });
+        }
+      });
   },
 
   computed: {

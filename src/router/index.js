@@ -16,6 +16,20 @@ const routes = [
     name: "event-list",
     component: EventList,
     props: true,
+    beforeEnter: (routeTo, routeFrom, next) => {
+      const currentPage = parseInt(routeTo.query.page) || 1;
+      store
+        .dispatch("event/fetchEvents", { page: currentPage })
+        .then(() => {
+          routeTo.params.page = currentPage;
+          next();
+        })
+        .catch((error) => {
+          if (error && error.code == "ECONNABORTED") {
+            next({ name: "network-issue" });
+          }
+        });
+    },
   },
   {
     path: "/event/:id",

@@ -48,20 +48,11 @@ export const actions = {
       });
   },
 
-  fetchEvents({ commit, dispatch, state }, { page }) {
-    return EventService.getEvents(state.perPage, page)
-      .then((response) => {
-        commit("SET_EVENTS_TOTAL", parseInt(response.headers["x-total-count"]));
-        commit("SET_EVENTS", response.data);
-      })
-      .catch((error) => {
-        const notification = {
-          type: "error",
-          message: "There was a problem fetching events: " + error.message,
-        };
-
-        dispatch("notification/add", notification, { root: true });
-      });
+  fetchEvents({ commit, state }, { page }) {
+    return EventService.getEvents(state.perPage, page).then((response) => {
+      commit("SET_EVENTS_TOTAL", parseInt(response.headers["x-total-count"]));
+      commit("SET_EVENTS", response.data);
+    });
   },
 
   fetchEvent({ commit, getters }, id) {
