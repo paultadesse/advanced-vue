@@ -8,6 +8,7 @@
       <router-link
         :to="{ name: 'event-list', query: { page: page - 1 } }"
         rel="prev"
+        class="underline text-green-400"
       >
         Prev page</router-link
       >
@@ -18,6 +19,7 @@
       <router-link
         :to="{ name: 'event-list', query: { page: page + 1 } }"
         rel="next"
+        class="underline text-green-400"
       >
         Next page</router-link
       >
@@ -54,8 +56,8 @@ export default {
     getPageEvents(routeTo, next);
   },
 
-  beforeRouteUpdate(routeTo, routeFrom, next){
-    getPageEvents(routeTo, next)
+  beforeRouteUpdate(routeTo, routeFrom, next) {
+    getPageEvents(routeTo, next);
   },
 
   computed: {
