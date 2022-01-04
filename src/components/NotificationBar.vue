@@ -1,6 +1,11 @@
 <template lang="">
   <div>
-    <p>{{ notification.message }}</p>
+    <div
+      class="text-white p-4"
+      :class="notificationType === 'success' ? 'bg-green-600 ' : 'bg-red-600 '"
+    >
+      <p>{{ notification.message }}</p>
+    </div>
   </div>
 </template>
 <script>
@@ -16,6 +21,12 @@ export default {
     return {
       timeout: null,
     };
+  },
+
+  computed: {
+    notificationType() {
+      return this.notification.type;
+    },
   },
 
   mounted() {
