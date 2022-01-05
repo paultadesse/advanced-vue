@@ -431,6 +431,24 @@
       },
       "caregory": "",
       "attendees": []
+    },
+    {
+      "id": 4122116,
+      "user": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "title": "Music Fest",
+      "date": "",
+      "time": "16:00",
+      "location": "Addis Ababa",
+      "description": "Some Wvent Description",
+      "organizer": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "category": "community",
+      "attendees": []
     }
   ]
 }

@@ -3,14 +3,11 @@
     <h1 class="font-bold text-6xl">Create an Event</h1>
     <div class="flex text-justify justify-center pt-10">
       <form class="space-y-7 pb-10" @submit.prevent="createEvent">
-        <div class="flex flex-col">
-          <label class="text-sm text-gray-400" for=""> Select a category</label>
-          <select name="" id="" v-model="event.category">
-            <option value="" v-for="cat in categories" :key="cat">
-              {{ cat }}
-            </option>
-          </select>
-        </div>
+        <BaseSelect
+          lable="Select a category"
+          :options="categories"
+          v-model="event.category"
+        />
 
         <h3 class="text-3xl font-bold">Name & describe your event</h3>
         <BaseInput
@@ -40,16 +37,19 @@
           <datepicker v-model="event.date" placeholder="select a date" />
         </div>
 
-        <div class="flex flex-col">
-          <label class="text-sm text-gray-400" for=""> Select a time</label>
-          <select name="" id="" v-model="event.time">
-            <option value="" v-for="time in times" :key="time">
-              {{ time }}
-            </option>
-          </select>
-        </div>
+        <BaseSelect
+          lable="Select a time"
+          :options="times"
+          v-model="event.time"
+        />
 
-        <input class="block px-4 py-2" type="submit" value="Submit" />
+        <BaseButton
+          type="submit"
+          buttonClass="px-10 py-3 rounded-md text-white font-bold text-sm bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+          >Submit</BaseButton
+        >
+
+        <!-- <input class="block px-4 py-2" type="submit" value="Submit" /> -->
       </form>
     </div>
   </div>
@@ -106,7 +106,7 @@ export default {
         location: "",
         description: "",
         organizer: user,
-        caregory: "",
+        category: "",
         attendees: [],
       };
     },
