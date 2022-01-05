@@ -5,7 +5,7 @@
       :to="{ name: 'event-show', params: { id: event.id } }"
     >
       <div class="text-left space-y-1">
-        <span>@{{ event.time }} on {{ event.date | date}} </span>
+        <span>@{{ event.time }} on {{ event.date | date }} </span>
         <h4 class="font-bold">{{ event.title }}</h4>
 
         <BaseIcon name="users">
