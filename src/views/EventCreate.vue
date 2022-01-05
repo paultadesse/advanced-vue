@@ -1,54 +1,55 @@
 <template>
   <div>
-    <h1>Create an Event</h1>
-    <div>
-      <form class="space-y-2" @submit.prevent="createEvent">
-        <label for=""> Select a category</label>
-        <select name="" id="" v-model="event.category">
-          <option value="" v-for="cat in categories" :key="cat">
-            {{ cat }}
-          </option>
-        </select>
-        <h3>Name & describe your event</h3>
-        <div>
-          <label for="">Title</label>
-          <input
-            type="text"
-            v-model="event.title"
-            placeholder="add an event title"
-          />
+    <h1 class="font-bold text-6xl">Create an Event</h1>
+    <div class="flex text-justify justify-center pt-10">
+      <form class="space-y-7 pb-10" @submit.prevent="createEvent">
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-400" for=""> Select a category</label>
+          <select name="" id="" v-model="event.category">
+            <option value="" v-for="cat in categories" :key="cat">
+              {{ cat }}
+            </option>
+          </select>
         </div>
-        <div>
-          <label for="">Description</label>
-          <input
-            type="text"
-            v-model="event.description"
-            placeholder="add an event description"
-          />
-        </div>
-        <h3>where is your event</h3>
-        <div>
-          <label for="">Location</label>
-          <input
-            type="text"
-            v-model="event.location"
-            placeholder="add a location"
-          />
-        </div>
-        <h3>when is your event</h3>
-        <div>
-          <label for="">date</label>
+
+        <h3 class="text-3xl font-bold">Name & describe your event</h3>
+        <BaseInput
+          lable="Title"
+          type="text"
+          placeholder="title"
+          v-model="event.title"
+        />
+        <BaseInput
+          lable="Description"
+          type="text"
+          placeholder="add an event description"
+          v-model="event.description"
+        />
+
+        <h3 class="text-3xl font-bold">where is your event ?</h3>
+        <BaseInput
+          lable="Location"
+          type="text"
+          placeholder="add a location"
+          v-model="event.location"
+        />
+
+        <h3 class="text-3xl font-bold">when is your event ?</h3>
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-400" for="">Date</label>
           <datepicker v-model="event.date" placeholder="select a date" />
         </div>
 
-        <label for=""> Select a time</label>
-        <select name="" id="" v-model="event.time">
-          <option value="" v-for="time in times" :key="time">
-            {{ time }}
-          </option>
-        </select>
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-400" for=""> Select a time</label>
+          <select name="" id="" v-model="event.time">
+            <option value="" v-for="time in times" :key="time">
+              {{ time }}
+            </option>
+          </select>
+        </div>
 
-        <input type="submit" value="Submit" />
+        <input class="block px-4 py-2" type="submit" value="Submit" />
       </form>
     </div>
   </div>
