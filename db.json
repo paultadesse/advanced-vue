@@ -449,6 +449,42 @@
       },
       "category": "community",
       "attendees": []
+    },
+    {
+      "id": 1208053,
+      "user": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "title": "Validating Forms",
+      "date": "2022-01-12T15:02:00.000Z",
+      "time": "19:00",
+      "location": "Los Angeles",
+      "description": "some description",
+      "organizer": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "category": "education",
+      "attendees": []
+    },
+    {
+      "id": 5001132,
+      "user": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "title": "Testing Mixin",
+      "date": "2022-01-03T15:31:00.000Z",
+      "time": "18:00",
+      "location": "Local computer",
+      "description": "HAHAH",
+      "organizer": {
+        "id": "abc123",
+        "name": "Paul"
+      },
+      "category": "sustainability",
+      "attendees": []
     }
   ]
 }

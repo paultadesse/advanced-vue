@@ -6,6 +6,9 @@ import "./index.css";
 import upperFirst from "lodash/upperFirst";
 import camelCase from "lodash/camelCase";
 import "nprogress/nprogress.css";
+import Vuelidate from "vuelidate";
+
+Vue.use(Vuelidate);
 
 const requireComponent = require.context(
   // The relative path of the components folder
